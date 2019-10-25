@@ -1,5 +1,5 @@
 image:
-  - mysql:latest
+  mysql:5.7
   
 deploy:
   stage: deploy
