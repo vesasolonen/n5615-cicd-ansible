@@ -10,13 +10,13 @@ variables:
     MYSQL_USER: "admin_user"
     MYSQL_PASSWORD: "P#q3dJ/4"
 
-  adminer:
+adminer:
     image: adminer
     restart: always
     ports:
       - 8080:80
 
-  deploy:
+deploy:
     stage: deploy
     script:
       - cat ansible.txt
