@@ -1,4 +1,7 @@
 services:
+  - db
+  - variables
+  -adminer
 
   db:
     image: mysql
