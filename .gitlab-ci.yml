@@ -6,5 +6,5 @@ deploy:
   script:
     - cat ansible.txt
     
-  tags:
-    - dev2ops
+tags:
+  - dev2ops
