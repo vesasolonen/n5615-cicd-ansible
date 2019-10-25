@@ -19,9 +19,9 @@ services:
     ports:
       - 8080:80
 
-deploy:
-  stage: deploy
-  script:
-    - cat ansible.txt
+  deploy:
+    stage: deploy
+    script:
+      - cat ansible.txt
   tags:
     - dev2ops
