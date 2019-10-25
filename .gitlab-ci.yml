@@ -1,6 +1,5 @@
 services:
   - db
-  - variables
   - adminer
 
   db:
@@ -9,17 +8,9 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: wPrP80
+      MYSQL_USER: admin_user
+      MYSQL_PASSWORD: P#q3dJ/4
       
-  variables:
-    # Configure mysql environment variables (https://hub.docker.com/_/mysql/)
-    Host: mysql
-    User: admin_user
-    Password: P#q3dJ/4
-    Database: wordpress
-  tags:
-    - dev2ops
-      
-
   adminer:
     image: adminer
     restart: always
