@@ -1,4 +1,4 @@
-image: alpine:latest
+image: mysql:5.7
   
 deploy:
   stage: deploy
