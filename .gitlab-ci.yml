@@ -2,20 +2,20 @@ services:
   - mysql:5.7
 
 variables:
-    MYSQL_ROOT_PASSWORD: "wPrP80"
-    MYSQL_DATABASE: "wordpress"
-    MYSQL_USER: "admin_user"
-    MYSQL_PASSWORD: "P#q3dJ/4"
+  MYSQL_ROOT_PASSWORD: "wPrP80"
+  MYSQL_DATABASE: "wordpress"
+  MYSQL_USER: "admin_user"
+  MYSQL_PASSWORD: "P#q3dJ/4"
 
 adminer:
-    image: adminer
-    restart: always
-    ports:
-      - 8080:80
+  image: adminer
+  restart: always
+  ports:
+    - 8080:80
 
 deploy:
-    stage: deploy
-    script:
-      - cat ansible.txt
+  stage: deploy
+  script:
+    - cat ansible.txt
   tags:
     - dev2ops
