@@ -1,6 +1,6 @@
-services:
-  - db
-  - adminer
+  services:
+    - db
+    - adminer
 
   db:
     image: mysql
