@@ -1,5 +1,6 @@
 image:
   - mysql:latest
+  
 deploy:
   stage: deploy
   script:
