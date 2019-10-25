@@ -1,1 +1,5 @@
-This is a test text -file...
+environment:
+      MYSQL_ROOT_PASSWORD: wPrP80
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: admin_user
+      MYSQL_PASSWORD: P#q3dJ/4
