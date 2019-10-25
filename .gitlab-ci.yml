@@ -1,0 +1,6 @@
+image: alpine:latest
+
+deploy1:
+  stage: deploy
+  script:
+    - cat ansible.txt
