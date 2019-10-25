@@ -1,5 +1,8 @@
-services:
+image:
   - mysql:latest
-
+deploy:
+  stage: deploy
+  script:
+    - cat ansible.txt
   tags:
     - dev2ops
